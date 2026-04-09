@@ -27,7 +27,7 @@
 ╚═══════════════════════════════════════════════════════════════════╝
 ```
 
-# LLM Wiki
+# LLM Wikid
 
 An AI-maintained knowledge base that lives in Obsidian. Based on [Karpathy's LLM Wiki pattern](https://x.com/karpathy/status/1890540708772143562).
 
@@ -38,7 +38,7 @@ Works with any agent that can read markdown and run shell commands: Claude Code,
 ## Quick Start
 
 ```bash
-git clone https://github.com/shannhk/llm-wiki.git my-wiki
+git clone https://github.com/shannhk/llm-wikid.git my-wiki
 cd my-wiki
 
 # open as an Obsidian vault
