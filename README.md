@@ -1,11 +1,42 @@
-# LLM Wiki Template
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║   ██╗     ██╗     ███╗   ███╗   ██╗    ██╗██╗██╗  ██╗██╗        ║
+║   ██║     ██║     ████╗ ████║   ██║    ██║██║██║ ██╔╝██║        ║
+║   ██║     ██║     ██╔████╔██║   ██║ █╗ ██║██║█████╔╝ ██║        ║
+║   ██║     ██║     ██║╚██╔╝██║   ██║███╗██║██║██╔═██╗ ██║        ║
+║   ███████╗███████╗██║ ╚═╝ ██║   ╚███╔███╔╝██║██║  ██╗██║        ║
+║   ╚══════╝╚══════╝╚═╝     ╚═╝    ╚══╝╚══╝ ╚═╝╚═╝  ╚═╝╚═╝        ║
+║                                                                   ║
+║   build a personal AI knowledge base in obsidian                  ║
+║                                                                   ║
+║   raw sources ──> AI agent ──> structured wiki                    ║
+║                                                                   ║
+║   ┌─────────┐    ┌───────────┐    ┌─────────────────────┐        ║
+║   │  raw/   │───>│  CLAUDE.md │───>│  wiki/              │        ║
+║   │ clips   │    │  (schema)  │    │  concepts/          │        ║
+║   │ ideas   │    │            │    │  entities/           │        ║
+║   │ tweets  │    │  ingest    │    │  sources/            │        ║
+║   │ papers  │    │  query     │    │  index.md            │        ║
+║   │ urls    │    │  explore   │    │  ──> obsidian graph  │        ║
+║   └─────────┘    └───────────┘    └─────────────────────┘        ║
+║                                                                   ║
+║   works with any AI agent that can read markdown and run bash     ║
+║   @shannholmberg                                                  ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+```
 
-A template for building a personal knowledge base maintained by an LLM agent, based on [Andrej Karpathy's LLM Wiki pattern](https://x.com/karpathy/status/1890540708772143562). You clip stuff into a raw folder, the AI compiles it into structured wiki pages with cross-references, bias checks, and a master index.
+# LLM Wiki
+
+A template for building a personal knowledge base maintained by an AI agent, based on [Andrej Karpathy's LLM Wiki pattern](https://x.com/karpathy/status/1890540708772143562). You clip stuff into a raw folder, the agent compiles it into structured wiki pages with cross-references, bias checks, and a master index.
+
+Works with any agent that can read markdown and run shell commands: Claude Code, OpenClaw, Hermes, Codex, or your own setup.
 
 ## What You Need
 
 - [Obsidian](https://obsidian.md/) (free) - to browse and read the wiki
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - the AI agent that maintains everything
+- An AI agent (Claude Code, OpenClaw, Hermes, etc.)
 - Git - version control for the vault
 
 ### Optional Tools
@@ -23,17 +54,18 @@ These get installed as needed during ingestion:
 
 ```bash
 # Clone the template
-git clone https://github.com/YOUR_USERNAME/llm-wiki-template.git my-wiki
+git clone https://github.com/shannhk/llm-wiki.git my-wiki
 cd my-wiki
 
 # Open in Obsidian
 # File > Open Vault > select the my-wiki folder
 
-# Start Claude Code (skip permissions recommended for smoother operation)
-claude --dangerously-skip-permissions
+# Start your agent in the folder
+claude --dangerously-skip-permissions   # Claude Code
+# or open with OpenClaw, Hermes, Codex, etc.
 ```
 
-That's it. The CLAUDE.md file tells the agent how everything works.
+That's it. The CLAUDE.md file tells the agent how everything works. Any agent that can read markdown and run bash commands will pick it up.
 
 ## How to Use
 
@@ -123,5 +155,4 @@ Key principles:
 
 - [Andrej Karpathy's LLM Wiki pattern](https://x.com/karpathy/status/1890540708772143562) - the original idea
 - [hooeem's LLM Knowledge Base course](https://www.youtube.com/watch?v=IVpOyKCNZYw) - detailed tutorial on the pattern
-- [dSebastien's Obsidian LLM Wiki](https://dsebastien.net/) - advanced wiki architecture with multi-agent review
-- Built for use with [Claude Code](https://docs.anthropic.com/en/docs/claude-code) by Anthropic
+- Built by [@shannholmberg](https://x.com/shannholmberg)
