@@ -129,7 +129,7 @@ wiki/                                         # compiled knowledge (AI-maintaine
     greg-isenberg.md                          # person page
   sources/
     karpathy-2026-llm-wiki.md                 # summary of one raw source
-    shann-2026-agent-marketing-department.md  # themed group of your tweets
+    your-2026-ai-agent-workflows.md          # themed group of your tweets
   syntheses/                                  # cross-cutting analysis (grows over time)
   outputs/
     context-engineering-explained.md          # filed answer to a /wiki-query
