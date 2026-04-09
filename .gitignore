@@ -7,8 +7,9 @@
 .DS_Store
 Thumbs.db
 
-# Claude Code
-.claude/
+# Claude Code (keep commands/, ignore everything else)
+.claude/*
+!.claude/commands/
 
 # Secrets
 .env
